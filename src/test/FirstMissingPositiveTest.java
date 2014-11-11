@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.FirstMissingPositive;
+import javacode.FirstMissingPositive;
 
 import org.junit.Test;
 

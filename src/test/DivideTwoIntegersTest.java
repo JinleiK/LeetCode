@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.DivideTwoIntegers;
+import javacode.DivideTwoIntegers;
 
 import org.junit.Test;
 

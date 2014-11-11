@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.DistinctSubsequences;
+import javacode.DistinctSubsequences;
 
 import org.junit.Test;
 

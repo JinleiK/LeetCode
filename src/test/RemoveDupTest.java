@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.RemoveDup;
+import javacode.RemoveDup;
 
 import org.junit.Test;
 

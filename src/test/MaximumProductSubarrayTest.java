@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.MaximumProductSubarray;
+import javacode.MaximumProductSubarray;
 
 import org.junit.Test;
 

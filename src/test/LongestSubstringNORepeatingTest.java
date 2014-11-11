@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.LongestSubstringNORepeating;
+import javacode.LongestSubstringNORepeating;
 
 import org.junit.Test;
 

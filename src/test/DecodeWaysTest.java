@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.DecodeWays;
+import javacode.DecodeWays;
 
 import org.junit.Test;
 

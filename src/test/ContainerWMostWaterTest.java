@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.ContainerWMostWater;
+import javacode.ContainerWMostWater;
 
 import org.junit.Test;
 

@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.WordSearch;
+import javacode.WordSearch;
 
 import org.junit.Test;
 

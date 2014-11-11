@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.FindMinInRotatedSortedArray;
+import javacode.FindMinInRotatedSortedArray;
 
 import org.junit.Test;
 

@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.LongestPalindromicSubstring;
+import javacode.LongestPalindromicSubstring;
 
 import org.junit.Test;
 

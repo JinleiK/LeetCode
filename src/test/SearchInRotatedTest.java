@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.SearchInRotated;
+import javacode.SearchInRotated;
 
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-import java.AddBinary;
+import javacode.AddBinary;
 
 import org.junit.Test;
 

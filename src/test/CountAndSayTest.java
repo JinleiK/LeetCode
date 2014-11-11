@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.CountAndSay;
+import javacode.CountAndSay;
 
 import org.junit.Test;
 

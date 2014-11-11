@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.TrappingWater;
+import javacode.TrappingWater;
 
 import org.junit.Test;
 

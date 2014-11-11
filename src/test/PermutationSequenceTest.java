@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.PermutationSequence;
+import javacode.PermutationSequence;
 
 import org.junit.Test;
 

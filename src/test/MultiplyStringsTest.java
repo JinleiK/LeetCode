@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.MultiplyStrings;
+import javacode.MultiplyStrings;
 
 import org.junit.Test;
 

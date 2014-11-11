@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.JumpGame;
+import javacode.JumpGame;
 
 import org.junit.Test;
 

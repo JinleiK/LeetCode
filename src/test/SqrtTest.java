@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.Sqrt;
+import javacode.Sqrt;
 
 import org.junit.Test;
 

@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.ImplementStrStr;
+import javacode.ImplementStrStr;
 
 import org.junit.Test;
 

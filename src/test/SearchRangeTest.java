@@ -1,7 +1,6 @@
 package test;
 import static org.junit.Assert.*;
-
-import java.SearchRange;
+import javacode.SearchRange;
 
 import org.junit.Test;
 
