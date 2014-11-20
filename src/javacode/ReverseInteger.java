@@ -32,10 +32,28 @@ public class ReverseInteger {
 		return out;
 	}
 	
+	public int reverse3(int x) {
+		if(x == 0)
+            return 0;
+        int sign = 1;
+        int end = 0;
+        char[] xArr = Integer.toString(x).toCharArray();
+        StringBuilder sb = new StringBuilder();
+        if(x < 0)
+            end = 1;
+        for(int i = xArr.length - 1; i >= end; i --){
+            sb.append(xArr[i]);
+        }
+        long reversed = Long.valueOf(sb.toString());
+        if(reversed > Integer.MAX_VALUE)
+            return 0;
+        return sign * (int)reversed;
+    }
+	
 	public static void main(String[] args){
 		ReverseInteger ri = new ReverseInteger();
-		int x = 10;
-		int y = ri.reverse2(x);
+		int x = -2147483648;
+		int y = ri.reverse3(x);
 		System.out.println(y);
 	}
 }
