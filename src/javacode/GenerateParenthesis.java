@@ -7,7 +7,7 @@ import java.util.Set;
 
 
 public class GenerateParenthesis {
-	public List<String> generateParenthesis_1(int n) {
+	public List<String> generateParenthesis_Error(int n) {
         List<String> ps = new ArrayList<String>();
         if(n < 1){
             return ps;
@@ -16,7 +16,7 @@ public class GenerateParenthesis {
             ps.add("()");
             return ps;
         }
-        List<String> ls = generateParenthesis_1(n - 1);
+        List<String> ls = generateParenthesis_Error(n - 1);
         for(String s : ls){
             ps.add(s + "()");
             ps.add("()" + s);
@@ -52,6 +52,23 @@ public class GenerateParenthesis {
         
         generateP(ls, s + "(", left - 1, right);
         generateP(ls, s + ")", left, right - 1);
+    }
+    
+    public List<String> generateParenthesis_insert(int n) {
+        HashSet<String> ps = new HashSet<String>();
+        if(n < 1)
+            return new ArrayList<String>(ps);
+        ps.add("()");
+        for(int i = 1; i < n; i ++){
+            List<String> pre = new ArrayList<String>(ps);
+            ps = new HashSet<String>();
+            for(String p : pre){
+                for(int j = 0; j <= p.length(); j ++){
+                    ps.add(p.substring(0, j) + "()" + p.substring(j));
+                }
+            }
+        }
+        return new ArrayList<String>(ps);
     }
 	
 	public static void main(String[] args) {

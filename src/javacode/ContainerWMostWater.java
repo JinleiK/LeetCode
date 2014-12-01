@@ -1,7 +1,8 @@
 package javacode;
 
 public class ContainerWMostWater {
-	public int maxArea(int[] height) {
+	// TLE!
+	public int maxAreaDP(int[] height) {
         if(height.length < 2)   return 0;
         int[] water = new int[height.length];
         water[0] = 0;
@@ -15,5 +16,20 @@ public class ContainerWMostWater {
             water[i] = max;
         }
         return water[height.length - 1];
+    }
+	// two pointers
+	public int maxArea(int[] height) {
+        if(height == null || height.length < 2)
+            return 0;
+        int area = Integer.MIN_VALUE;
+        int l = 0;
+        int r = height.length - 1;
+        while(l < r){
+            area = Math.max(area, Math.min(height[l], height[r]) * (r - l));
+            if(height[l] < height[r])
+                l ++;
+            else r --;
+        }
+        return area;
     }
 }
