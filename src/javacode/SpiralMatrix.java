@@ -13,15 +13,15 @@ public class SpiralMatrix {
         int level = Math.min(m, n);
 //        System.out.println(level / 2);
         for(int i = 0; i < level / 2; i ++){
-            for(int j = i; j < level - i; j ++){
+            for(int j = i; j < n - i; j ++){
                 spiral.add(matrix[i][j]);
 //                System.out.println(matrix[i][j]);
             }
-            for(int j = i + 1; j < level - i; j ++)
-                spiral.add(matrix[j][level - 1 - i]);
-            for(int j = level - 2 - i; j >= i; j --)
-                spiral.add(matrix[level - 1 - i][j]);
-            for(int j = level - 2 - i; j > i; j --){
+            for(int j = i + 1; j < m - i; j ++)
+                spiral.add(matrix[j][n - 1 - i]);
+            for(int j = n - 2 - i; j >= i; j --)
+                spiral.add(matrix[m - 1 - i][j]);
+            for(int j = m - 2 - i; j > i; j --){
                 spiral.add(matrix[j][i]);
 //                System.out.println(matrix[j][i]);
             }
