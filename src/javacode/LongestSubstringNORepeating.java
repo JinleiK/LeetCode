@@ -54,4 +54,25 @@ public class LongestSubstringNORepeating {
         }
         return maxLen;
     }
+	
+	public int lengthOfLongestSubstring3(String s) {
+        if(s == null || s.length() == 0)
+            return 0;
+        int start = 0;
+        int maxLen = 0;
+        int curLen = 0;
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>(s.length());
+        for(int i = 0; i < s.length(); i ++){
+            char ch = s.charAt(i);
+            if(!map.containsKey(ch) || map.get(ch) < start){
+                curLen ++;
+            } else{
+                start = map.get(ch) + 1;
+                curLen = i - start + 1;
+            }
+            map.put(ch, i);
+            maxLen = Math.max(maxLen, curLen);
+        }
+        return maxLen;
+    }
 }

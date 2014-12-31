@@ -10,9 +10,9 @@ public class MultiplyStringsTest {
 	@Test
 	public void test() {
 		MultiplyStrings ms = new MultiplyStrings();
-		String num1 = "";
-		String num2 = "";
-		String expected = "";
+		String num1 = "0";
+		String num2 = "0";
+		String expected = "0";
 		String actual = ms.multiply(num1, num2);
 		assertEquals(expected, actual);
 	}
